@@ -1,13 +1,11 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaGithub, FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
-import { useRouter } from "next/navigation";
 
 const RecentProjects = () => {
-  const navigate = useRouter();
   return (
     <div id="projects" className="py-20">
       <h1 className="heading">
@@ -20,7 +18,7 @@ const RecentProjects = () => {
             className="sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center  w-[80vw]"
             key={item.id}
           >
-            <PinContainer title={"sf"} href={item.link}>
+            <PinContainer title={""} href={item.link}>
               <div className="relative sm:w-[570px] flex items-center justify-center sm:h-[40vh] w-[80vw] overflow-hidden h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -31,7 +29,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 w-[90%] h-full rotate-6"
                 />
               </div>
 
@@ -50,25 +48,31 @@ const RecentProjects = () => {
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
+                <div className="flex items-center gap-2">
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border  rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img
+                        src={icon}
+                        alt="icon5"
+                        className="p-[3px] w-20 object-contain bg-[#eee] rounded-full"
+                      />
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    <a href={item.git} target="_blank">
+                      <FaGithub size={35} />
+                    </a>
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  {/* <FaLocationArrow className="ms-3" color="#CBACF9" /> */}
                 </div>
               </div>
             </PinContainer>

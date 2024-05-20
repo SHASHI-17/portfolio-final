@@ -72,11 +72,19 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://gregarious-babka-497b3d.netlify.app/",
+    title: "NowYouCan - (LMS)",
+    des: "A full-stack web application built with Next.js, TypeScript, Mux, and Clerk for seamless authentication, UploadThing for file uploads, and Stripe in test mode for payment processing.",
+    img: "/Capture.PNG",
+    iconLists: [
+      "/nextjs.png",
+      "/typescript.png",
+      "/prisma.png",
+      "/shad.svg",
+      "/tailwind.png",
+      "/clerk.svg",
+    ],
+    link: "https://now-you-can.vercel.app/search",
+    git: "https://github.com/SHASHI-17/NowYouCan.git",
   },
   {
     id: 2,
@@ -268,14 +276,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "",
+    link: "https://github.com/SHASHI-17?tab=repositories",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "",
   },
 ];

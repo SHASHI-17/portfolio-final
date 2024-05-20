@@ -6,12 +6,23 @@ import { Button } from "./ui/MovingBorders";
 const Experience = () => {
   return (
     <div className="py-20 w-full" id="stack">
-      <h1 className="heading">
+      {/* <h1 className="heading">
         {" "}
         M<span className="text-purple">y</span> Te
         <span className="text-purple">ch </span>sta
         <span className="text-purple">ck</span>
+      </h1> */}
+      <h1 className=" text-[60px] font-bold md:text-left text-center">
+        Overv<span className="text-purple">iew</span> & Ski
+        <span className="text-purple">lls</span>.
       </h1>
+      <p className="max-w-3xl text-[17px] text-white-200 leading-[30px] mt-5">
+        I'm a skilled software developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Node.js, and
+        Next.js. I'm a quick learner and collaborate closely with clients to
+        create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let's work together to bring your ideas to life!
+      </p>
 
       {/* <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10"> */}
       <div className="w-full mt-12 flex flex-row flex-wrap gap-10 items-center justify-center">
