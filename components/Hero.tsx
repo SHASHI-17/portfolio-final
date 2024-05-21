@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 sm:pt-36 pt-24">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight

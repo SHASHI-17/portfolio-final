@@ -12,7 +12,7 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24  gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-12 xs:gap-12 mt-1">
         {projects.map((item) => (
           <div
             className="sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center  w-[80vw]"
@@ -29,7 +29,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 w-[90%] h-full rotate-6"
+                  className="z-10 absolute bottom-0 w-[90%] h-full rotate-6 "
                 />
               </div>
 

@@ -5,7 +5,7 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-0 sm:pt-6 pb-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
@@ -32,12 +32,15 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-6 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Shashi Kiran
+          Copyright © 2024 Shashi Kiran.
+        </p>
+        <p className="sm:hidden md:text-base text-sm md:font-normal font-light">
+          All rights reserved.
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 mt-6">
           {socialMedia.map((info) => (
             <a href={info.link} target="_blank" key={info.link}>
               <div
