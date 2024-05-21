@@ -13,6 +13,9 @@ const inter = Poppins({
 export const metadata: Metadata = {
   title: "Shashi's Portfolio",
   description: "Have a look !",
+  icons: {
+    icon: "/git.png",
+  },
 };
 
 export default function RootLayout({
