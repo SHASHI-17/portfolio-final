@@ -17,11 +17,12 @@ const Experience = () => {
         <span className="text-purple">lls</span>.
       </h1>
       <p className="max-w-3xl text-[17px] text-white-200 leading-[30px] mt-5">
-        I'm a skilled software developer with experience in TypeScript and
+        I&apos;m a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
-        Next.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Next.js. I&apos;m a quick learner and collaborate closely with clients
+        to create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let&apos;s work together to bring your ideas to
+        life!
       </p>
 
       {/* <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10"> */}

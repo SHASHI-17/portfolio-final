@@ -66,7 +66,7 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center cursor-pointer">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     <a href={item.git} target="_blank">
                       <FaGithub size={35} />
